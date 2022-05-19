@@ -1,0 +1,72 @@
+html, body {width: auto!important; overflow-x: hidden!important} 
+body{
+  background-color: #dee9ff;
+}
+.header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+input.ng-invalid.ng-touched{
+  border:1px solid red ;
+}
+select.ng-invalid.ng-touched{
+  border:1px solid red ;
+}
+.errMsg{
+  color:red ;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.ng-invalid{
+  color: #000;
+}
+
+
+
+/*
+.registration-form{
+padding: 0;
+} */
+
+.registration-form form{
+  background-color: rgb(231, 229, 229);
+  max-width: 600px;
+  margin: 20px auto auto;
+  padding: 30px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .item {
+ border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 7px 20px;
+}
+
+select {
+  appearance: none;
+}
+input[type="file"] {
+  cursor: pointer;
+}
+
+.btn{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+@media (max-width: 576px) {
+  .registration-form form{
+      padding: 50px 20px;
+  }
+
+}
+

@@ -1,0 +1,183 @@
+body{
+  background-color: #dee9ff;
+}
+.header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+input.ng-invalid.ng-touched{
+  border:1px solid red ;
+}
+select.ng-invalid.ng-touched{
+  border:1px solid red ;
+}
+.errMsg{
+  color:red ;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.ng-invalid{
+  color: #000;
+}
+
+
+
+/*
+.registration-form{
+padding: 0;
+} */
+
+.registration-form form{
+  background-color: rgb(231, 229, 229);
+  max-width: 600px;
+  margin: 20px auto auto;
+  padding: 30px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .item {
+ border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 7px 20px;
+}
+
+select {
+  appearance: none;
+}
+
+.btn{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+@media (max-width: 576px) {
+  .registration-form form{
+      padding: 50px 20px;
+  }
+
+}
+.tnavbar a{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar{
+  font-size:20px;
+  font-weight: bold;
+  margin-bottom: 0;
+ }
+ .logo{
+  font-size: 35px;
+  padding-left: 5px;
+ }
+ .nav.nav-pills{
+   text-align: center;
+   font-size:20px;
+  font-weight: bold;
+ }
+
+ /* Style the navigation bar */
+ .tnavbar {
+   width: 100%;
+   background-color: #555;
+   overflow: auto;
+ }
+
+ /* Navbar links */
+ .tnavbar a {
+   float: left;
+   text-align: center;
+   padding: 12px;
+   color: white;
+   text-decoration: none;
+   font-size: 24px;
+ }
+
+ /* Navbar links on mouse-over */
+ .tnavbar a:hover {
+   background-color: #000;
+ }
+
+ /* Style the search box inside the navigation bar */
+ .tnavbar input[type=text] {
+   /* float: center; */
+   padding: 6px;
+   border: none;
+   margin-top: 8px;
+   margin-right: 16px;
+   font-size: 17px;
+   height: 40px;
+ }
+ .tnavbar button{
+  margin-left: 0;
+  /* font-size: 20.5px; */
+  width: 40px;
+  height: 40px;
+ }
+ .ser{
+   float: center;
+   padding: 6px 10px;
+   margin-top: 8px;
+   margin-left: 0;
+   margin-right: 16px;
+   background: #ddd;
+   font-size: 17px;
+   border: none;
+   cursor: pointer;
+ }
+li{
+  text-decoration: none;
+  margin-right: -60px;
+  background: #000;
+}
+
+ /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+ @media screen and (max-width: 500px) {
+   .tnavbar a {
+     float: none;
+     display: block;
+   }
+ }
+
+ .icon-lbar{
+   width: 100px; /* Set a specific width */
+   margin-right: 0px;
+   display: -ms-inline-grid;
+   background-color: #000;
+  }
+
+ .icon-lbar a {
+   display: block; /* Make the links appear below each other instead of side-by-side */
+   text-align: center; /* Center-align text */
+    /* Add some padding */
+   padding: 15px;
+   transition: all 0.3s ease; /* Add transition for hover effects */
+   color: white; /* White text color */
+   font-size: 35px; /* Increased font-size */
+ }
+
+ .icon-lbar a:hover {
+   background-color: #000; /* Add a hover color */
+ }
+
+ .active {
+   background-color: #04AA6D;
+  }
+  select {
+    appearance: none;
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+
+  <div class="products col-md-11 pull-right">
+    <div class="ttt">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th >#</th>
+            <th >Name</th>
+            <th >Type</th>
+            <th >Price</th>
+            <th >Status</th>
+            <th >Amount</th>
+            <th >Date</th>
+            <th ></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products; let i = index"
+          style=" cursor: pointer;"
+          routerLinkActive="active"
+          >
+          <td scope="row">{{ (i+1)}}</td>
+          <td><h4 class="list-group-item-heading">{{ product.name }}</h4></td>
+          <td><p class="list-group-item-text">{{ product.type }}</p></td>
+          <td><p class="list-group-item-text">{{ product.price }}</p></td>
+          <td><p class="list-group-item-text">{{ product.status }}</p></td>
+          <td><p class="list-group-item-text">{{ product.amount }}</p></td>
+          <td><p class="list-group-item-text">{{ product.date }}</p></td>
+          <td><span class="">
+                      <button type="button" class="btn btn-danger" (click)="deleteProduct(product.id)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" class="bi bi-trash-fill" viewBox="3 -1 16 16">
+                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>Delete</button>
+                  </span></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+</div>
+
+
+
+
+

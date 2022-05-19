@@ -1,0 +1,101 @@
+
+<div class="row">
+  <div class="registration-form">
+    <form (submit)="updateProduct(contactForm.value)" #contactForm="ngForm">
+      <div class="form-row">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Enter Product Name"
+            class="form-control item"
+            id="inputProductName"
+            [(ngModel)]="product.name"
+            name="name"
+            #firstnameTxt="ngModel"
+            required
+          />
+          <p class="errMsg" *ngIf="!firstnameTxt.valid && firstnameTxt.touched">
+            Required!
+          </p>
+        </div>
+        <div class="form-group">
+          <select
+            type="text"
+            class="form-control item"
+            [(ngModel)]="product.type"
+            name="type"
+            required
+          >
+            <option value="Fruit">Fruit</option>
+            <option value="Vegetable">Vegetable</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <input
+            type="number"
+            placeholder="Enter Product Price"
+            class="form-control item"
+            [(ngModel)]="product.price"
+            name="price"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <select
+          type="text"
+          placeholder="Enter Product Status"
+          class="form-control item"
+          [(ngModel)]="product.status"
+          name="status"
+          required
+          >
+            <option value="Valid">Valid</option>
+            <option value="Not Valid">Not Valid</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="number"
+            placeholder="Enter Product Amount"
+            class="form-control item"
+            id="inputProductAmount"
+            [(ngModel)]="product.amount"
+            name="amount"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="date"
+            class="form-control item"
+            id="inputdate"
+            [(ngModel)]="product.date"
+            name="date"
+            required
+          />
+        </div>
+      </div>
+      <div
+        class="row btn-toolbar"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <button
+          type="submit"
+          class="btn btn-warning col-xs-12"
+          role="group"
+          aria-label="Second group"
+          [disabled]="!contactForm.valid"
+        >
+          Update
+        </button>
+        &nbsp;&nbsp;
+        <button class="btn btn-danger col-xs-12" (click)="onCancel()">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

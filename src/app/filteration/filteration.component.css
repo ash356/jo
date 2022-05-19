@@ -1,0 +1,82 @@
+html, body {width: auto!important; overflow-x: hidden!important}
+caption{
+  font-size: large;
+}
+.products{
+  text-align:-webkit-center;
+
+}
+.btn-block {
+  display: block;
+  width: 50%;
+}
+.create-account{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1ec934;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.test{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f0ad4e;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media
+  only screen
+  and (max-width: 760px), (min-device-width: 768px)
+  and (max-device-width: 1024px)  {
+    /* .products{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    } */
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: grid;
+    width: 100%;
+    margin-right: 72px;
+  }
+  /* #find table, thead, tbody, th, td, tr {
+    display: grid;
+    width: 100%;
+    margin-right: 55px;
+  } */
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr:nth-child(odd) {
+    background: rgb(246, 245, 245);
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 0%;
+
+  }
+
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 100%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  }

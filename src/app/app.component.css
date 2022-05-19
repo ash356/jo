@@ -1,0 +1,136 @@
+html, body {
+  width: auto!important;
+  overflow-x: hidden!important
+}
+.tnavbar a{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar{
+  font-size:20px;
+  font-weight: bold;
+  margin-bottom: 0;
+ }
+ .logo{
+  font-size: 35px;
+  padding-left: 5px;
+  color: #009688;
+    font-family: "Monoton", cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .nav.nav-pills{
+   text-align: center;
+   font-size:20px;
+  font-weight: bold;
+ }
+
+ /* Style the navigation bar */
+ .tnavbar {
+   width: 100%;
+   background-color: #191919;
+   overflow: auto;
+ }
+
+ /* Navbar links */
+ .tnavbar a {
+   float: left;
+   text-align: center;
+   padding: 12px;
+   color: white;
+   text-decoration: none;
+   font-size: 24px;
+ }
+
+ /* Navbar links on mouse-over */
+ .tnavbar a:hover {
+   background-color: #000;
+ }
+
+ /* Current/active navbar link */
+ .active {
+   background-color: #009688;
+ }
+ /* Style the search box inside the navigation bar */
+ .tnavbar input[type=text] {
+   /* float: center; */
+   padding: 6px;
+   border: none;
+   margin-top: 8px;
+   margin-right: 16px;
+   font-size: 17px;
+   height: 40px;
+ }
+ .tnavbar button{
+  margin-left: 0;
+  /* font-size: 20.5px; */
+  width: 40px;
+  height: 40px;
+ }
+ .ser{
+   float: center;
+   padding: 6px 10px;
+   margin-top: 8px;
+   margin-left: 0;
+   margin-right: 16px;
+   background: #ddd;
+   font-size: 17px;
+   border: none;
+   cursor: pointer;
+ }
+
+li{
+  list-style-type: none;
+  /* margin-right: -60px; */
+}
+
+ /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+ @media screen and (max-width: 500px) {
+   .tnavbar a {
+     float: none;
+     display: block;
+   }
+
+ }
+
+ .icon-lbar{
+   /* Set a specific width */
+   margin-right: 0px;
+   display: block;
+   background-color: #191919;
+   padding-right: 0px;
+   padding-left: 0px;
+  }
+
+ .icon-lbar a {
+   display: block; /* Make the links appear below each other instead of side-by-side */
+   text-align: center; /* Center-align text */
+    /* Add some padding */
+   padding: 13px;
+   transition: all 0.3s ease; /* Add transition for hover effects */
+   color: white; /* White text color */
+   font-size: 35px; /* Increased font-size */
+ }
+
+ .icon-lbar a:hover {
+   background-color: #000; /* Add a hover color */
+ }
+@media (max-width: 767px) {
+  .icon-lbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
